@@ -12,8 +12,11 @@ const Card = () => {
     }
 
     return (
-        <div className={getClassName()} >
-            <div className="card">
+        <div className="card" id={episode.id}>
+            <div className='card-header'>
+                <button>Ajouter aux favoris</button>
+            </div>
+            <div className="card-body">
                 <h3>{episode.name}</h3>
                 <p>{episode.air_date}</p>
                 <p>{episode.episode}</p>
