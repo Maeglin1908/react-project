@@ -2,7 +2,14 @@ import '../styles/Card.css';
 import PropTypes, {instanceOf} from 'prop-types';
 import {Episode} from "../models/Episode";
 
-const Card = ({episode}) => {
+const Card = () => {
+
+    const episode = { 
+        name: "Mangé chez toto",
+        air_date: "December 2, 2013",
+        episode: "S01E01",
+        url: "https://rickandmortyapi.com/api/character/2"
+    }
 
     return (
         <div className={getClassName()} >
