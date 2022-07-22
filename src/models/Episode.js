@@ -1,13 +1,15 @@
 class Episode {
     name;
-    date;
+    air_date;
     episode;
+    url;
     fav;
 
-    constructor(name, date, episode, fav = false){
+    constructor(name, air_date, episode,url, fav = false){
         this.name = name;
-        this.date = date;
+        this.air_date = air_date;
         this.episode = episode;
+        this.url = url;
         this.fav = fav;
     }
 
