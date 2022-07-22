@@ -1,27 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import
 const Header = () => {
   return (
-    <div className="header">
+    <header>
+      <img class="logo" src="../assets/ricketmorty.png" alt="Logo"/>
       <nav>
         <ul>
           <NavLink
             to="/"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="home"
           >
             <li>Accueil</li>
           </NavLink>
           <NavLink
-            to="/coup-de-coeur"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            to="/characters"
+            className="characters"
           >
-            <li>Coup de coeur</li>
+            <li>Personnages</li>
           </NavLink>
         </ul>
       </nav>
-      <h1>React Movies</h1>
-    </div>
+    </header>
   );
 };
 
