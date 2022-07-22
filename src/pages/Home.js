@@ -1,18 +1,17 @@
-import { useEffects, useState } from "react";
-import React from "react";
+import { useEffect, useState } from "react";
+import Header from "../components/Header";
 import { getEpisodes } from "../services/RickService";
 import Card from "./../components/Card";
-import Header from "../components/Header";
 const Home = function () {
     const [episodes, setEpisodes] = useState([]);
 
-    useEffects(() => {
-        getEpisodes.then((res) => setEpisodes(res)).catch(() => alert("API Cassé"));
+    useEffect(() => {
+        getEpisodes().then((res) => setEpisodes(res));
     }, []);
 
     return (
         <>
-        <Header/>
+            <Header />
             <h1>Home</h1>
 
             <div className="episodes"></div>
