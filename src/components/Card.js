@@ -5,9 +5,9 @@ import {Episode} from "../models/Episode";
 const Card = ({episode}) => {
 
     return (
-        <div className="card" id={episode}>
+        <div className="flex">
+            <div className="card" id={episode}>
             <div className='card-header'>
-                <button>Ajouter aux favoris</button>
             </div>
             <div className="card-body">
                 <h3>{episode.name}</h3>
@@ -15,7 +15,10 @@ const Card = ({episode}) => {
                 <p>{episode.episode}</p>
                 <p><i>{episode.url}</i></p>
             </div>
+            <button>Ajouter aux favoris</button>
         </div>
+        </div>
+
     )
 }
 

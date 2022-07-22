@@ -12,7 +12,7 @@ const Home = function () {
     return (
         <>
             <Header />
-            <h1>Home</h1>
+            <h1>Episodes</h1>
 
             <div className="episodes"></div>
             {episodes.map((e) => (

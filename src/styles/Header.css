@@ -1,4 +1,4 @@
-.header {
+header {
     color: #202329;
     font-size: 18px;
     font-weight: bolder;
@@ -20,24 +20,8 @@
       margin-right: 30px;
       align-items: center;
     }
-    li {
-        margin-right: 30px;
-    }
-    
-    .link a:hover{
-      color:#F58217;
-    }
-    
-    .btn {
-      border: 2px solid #F58217;
-      background-color: transparent;
-      border-radius: 10px;
-      padding: 10px;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover{
-      background-color: #F58217;
-      color:white;
+    li  {
+        padding-left: 10px;
     }
     a {
       color: inherit;
@@ -45,19 +29,4 @@
     }
     i {
       display:none;
-    }
-    
-    @media (max-width: 630px) {
-      .header {
-          font-size: 16px;
-      }
-      ul {
-        margin-right:0;
-      }
-      li {
-        margin-right: 10px;
-    }
-    .link_Homepage {
-      display:none;
-    }
     }

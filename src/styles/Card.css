@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width:1600px;
+    margin:auto;
+  }
 .card {
     width: min(300px, 100%);
     height: 400px;
