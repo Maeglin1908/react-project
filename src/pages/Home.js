@@ -1,4 +1,5 @@
 import { useEffects, useState } from "react";
+import React from "react";
 import { getEpisodes } from "../services/RickService";
 import Card from "./../components/Card";
 const Home = function () {
