@@ -1,15 +1,18 @@
-import axios from "axios";
-
+import { useEffects, useState } from "react";
+import { getEpisodes } from "../services/RickService";
+import Card from "./../components/Card";
 const Home = function () {
     const [episodes, setEpisodes] = useState([]);
 
     useEffects(() => {
-        axios.get(url_episodes).then((res) => setEpisodes(res));
+        getEpisodes.then((res) => setEpisodes(res)).catch(() => alert("API Cassé"));
     }, []);
+
     return (
         <>
             <h1>Home</h1>
 
+            <div className="episodes"></div>
             {episodes.map((e) => (
                 <Card episode={e} />
             ))}
