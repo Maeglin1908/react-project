@@ -12,7 +12,7 @@ const Card = () => {
     }
 
     return (
-        <div className="card" id={episode.id}>
+        <div className="card" id={episode}>
             <div className='card-header'>
                 <button>Ajouter aux favoris</button>
             </div>
