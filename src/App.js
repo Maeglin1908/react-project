@@ -1,18 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import "./styles/App.css";
+import Characters from "./pages/Characters";
+import './styles/App.css';
 
 function App() {
-    return (
-        <div className="App">
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="*" element={<Home />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
-    );
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/characters" element={<Characters />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+     </BrowserRouter>
+    </div>
+  );
 }
-
 export default App;
