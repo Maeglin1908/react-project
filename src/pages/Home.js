@@ -2,6 +2,7 @@ import { useEffects, useState } from "react";
 import React from "react";
 import { getEpisodes } from "../services/RickService";
 import Card from "./../components/Card";
+import Header from "../components/Header";
 const Home = function () {
     const [episodes, setEpisodes] = useState([]);
 
@@ -11,6 +12,7 @@ const Home = function () {
 
     return (
         <>
+        <Header/>
             <h1>Home</h1>
 
             <div className="episodes"></div>
